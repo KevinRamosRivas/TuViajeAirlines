@@ -1,0 +1,18 @@
+:root{
+    --color-primario: #ffc300;
+    --color-secundario: #516ed3;
+    --texto: #1d1e1f;
+    --fuente-texto: 'Poppins', sans-serif;
+}
+
+
+.header{
+    background-color: var(--color-primario);
+}
+
+.nav-text{
+    color: var(--texto);
+    font-weight: bold;
+    font-family: var(--fuente-texto);
+    text-align: center;
+}
