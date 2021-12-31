@@ -24,8 +24,11 @@
     
 }
 
-.buscar{
+.btn-holder {
+    justify-content: flex-end;
+    display: flex;
     float: right;
+    
 }
 
 @media (min-width: 992px){
