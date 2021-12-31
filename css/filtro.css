@@ -21,7 +21,13 @@
     text-transform: capitalize;
     height: calc(3rem + 2px) !important;
     border-radius:0;
+    
 }
+
+.buscar{
+    float: right;
+}
+
 @media (min-width: 992px){
     .search-sec{
         position: relative;
