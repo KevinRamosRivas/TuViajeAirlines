@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
-
-    
+    <link href="css/filtro.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
     <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -32,269 +33,471 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
   <body>
-    
-<header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Carousel</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-</header>
+    <!--INICIO DEL HEADER-->
+    <header class="header p-t-0" style="background-color: #FFC300;">
+      <div class="container-fluid px-5">
+          <div class="navbar flex-column flex-md-row">
+              <a class="navbar-brand" href="#">
+                  <img src="img/LogoTuViaje.png" alt="LogoTuViaje" width="80" height="80">
+              </a>
 
-<main>
-<!--Aqui inicia el codigo del carrusel-->
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="img/lima.jpg" alt="First slide">
+              <div class="navbar-nav  flex-md-row">
+                  <a class="nav-link nav-text me-3" href="#">OFERTAS</a>
+                  <a class="nav-link nav-text me-3" href="#">DESTINOS</a>
+                  <a class="nav-link nav-text" href="#">INICIAR SESION</a>
+              </div>
 
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Lima</h1>
-            <p>Viaja a Lima desde $150 o S/.600</p>
-            <p><a class="btn btn-lg btnC" href="#">Ver vuelos</a></p>
           </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="img/cuzco.jpg" alt="Second slide">
-
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Cuzco</h1>
-            <p>Viaja a Cuzco desde $150 o S/.600</p>
-            <p><a class="btn btn-lg btnC" href="#">Ver vuelos</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="img/arequipa.jpg" alt="Second slide">
-
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Arequipa</h1>
-            <p>Viaja a Arequipa desde $150 o S/.600</p>
-            <p><a class="btn btn-lg btnC" href="#">Ver vuelos</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="img/puno.jpg" alt="Second slide">
-
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Puno</h1>
-            <p>Viaja a Puno desde $150 o S/.600</p>
-            <p><a class="btn btn-lg btnC" href="#">Ver vuelos</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <!--Aqui acaba el codigo del carrusel-->
-  <!--Seccion de consejos-->
-  <div style="background-color: #FFC300;" class=" d-flex justify-content-center">
-    <div class="card mb-3 mt-4 ml-5 mr-5 h-auto" >
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="img/nosotros.jpg" class="img-fluid rounded-start" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Sobre Nosotros</h5>
-            <p class="card-text">
-              Descripción general
-              Junto con nuestro socio regional American Eagle, ofrecemos una media de cerca de 6700 vuelos diarios a 350 destinos de 50 países. Somos miembros fundadores de la alianza oneworld®, cuyos miembros y miembros electos ofrecen cerca de 14 250 vuelos diarios a 1000 destinos de 150 países.
-
-              En 2016 American Airlines Group Inc. encabezaba la lista de las mejores respuestas comerciales publicada por la revista Fortune, y su cotización de valores (NASDAQ: AAL) entró a formar parte del índice S&P 500.
-
-              Comuníquese con American a través de Twitter (@AmericanAir) y Facebook (Facebook.com/AmericanAirlines).
-
-              Historia
-              Fundada en 1930, somos ahora mismo una de las mayores líneas aéreas del mundo. A lo largo de los años, American ha creado más de 900 000 puestos de trabajo en todo el mundo y apoyado a cerca de 1400 organizaciones sin ánimo de lucro.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!final de seccion de consejos>
-  <!--Aqui inicia el codigo del carrusel de cobnsejos-->
-    <div id="carouselConsejos" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators" >
-        <li data-target="#carouselConsejos" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselConsejos" data-slide-to="1"></li>
-        <li data-target="#carouselConsejos" data-slide-to="2"></li>
-        </ol>
-        <div class="font-monospace mt-4">
-          <p class="fs-3 texto fw-bold text-center">Consejos para tu vuelo</p>
+      </div>    
+    </header>
+    <!--FIN DEL HEADER-->
+    <main>
+    <!--Aqui inicia el codigo del carrusel-->
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="row h-100 align-items-center text-center">
-                    <div class="col d-flex justify-content-center">
-                        <a href="#" class="consejos">
-                          <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap">
-                            <div class="card-body">
-                            <h5 class="card-title">Consejo 1</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                          </div>
-                        </a>
-                    </div>
-                    <div class="col d-flex justify-content-center" >
-                        <a href="#" class="consejos">
-                          <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap">
-                            <div class="card-body">
-                            <h5 class="card-title">Consejo 2</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-                    <div class="col d-flex justify-content-center" >
-                        <a href="#" class="consejos">
-                          <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap">
-                            <div class="card-body">
-                            <h5 class="card-title">Consejo 3</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-                </div>
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/lima.jpg" alt="First slide">
+
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Lima</h1>
+                <p>Viaja a Lima desde $150 o S/.600</p>
+                <p><a class="btn btn-lg btnC" href="#">Ver vuelos</a></p>
+              </div>
             </div>
-            <div class="carousel-item">
-                <div class="row h-100 align-items-center text-center">
-                    <div class="col d-flex justify-content-center">
-                      <a href="#" class="consejos">
-                        <div class="card" style="width: 18rem;">
-                          <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap">
-                          <div class="card-body">
-                          <h5 class="card-title">Consejo 4</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          </div>
-                      </div>
-                      </a>
-                    </div>
-                    <div class="col d-flex justify-content-center" >
-                      <a href="#" class="consejos">
-                        <div class="card" style="width: 18rem;">
-                          <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap">
-                          <div class="card-body">
-                          <h5 class="card-title">Consejo 5</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          </div>
-                      </div>
-                      </a>
-                    </div>
-                    <div class="col d-flex justify-content-center" >
-                      <a href="#" class="consejos">
-                        <div class="card" style="width: 18rem;">
-                          <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap">
-                          <div class="card-body">
-                          <h5 class="card-title">Consejo 6</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          </div>
-                      </div>
-                      </a>
-                    </div>
-                </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/cuzco.jpg" alt="Second slide">
+
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Cuzco</h1>
+                <p>Viaja a Cuzco desde $150 o S/.600</p>
+                <p><a class="btn btn-lg btnC" href="#">Ver vuelos</a></p>
+              </div>
             </div>
-            <div class="carousel-item">
-                <div class="row h-100 align-items-center text-center">
-                    <div class="col d-flex justify-content-center">
-                      <a href="#" class="consejos">
-                        <div class="card" style="width: 18rem;">
-                          <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap">
-                          <div class="card-body">
-                          <h5 class="card-title">Consejo 7</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          </div>
-                      </div>
-                      </a>
-                    </div>
-                    <div class="col d-flex justify-content-center" >
-                      <a href="#" class="consejos">
-                        <div class="card" style="width: 18rem;">
-                          <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap">
-                          <div class="card-body">
-                          <h5 class="card-title">Consejo 8</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          </div>
-                      </div>
-                      </a>
-                    </div>
-                    <div class="col d-flex justify-content-center" >
-                      <a href="#" class="consejos">
-                        <div class="card" style="width: 18rem;">
-                          <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap">
-                          <div class="card-body">
-                          <h5 class="card-title">Consejo 9</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          </div>
-                      </div>
-                      </a>
-                    </div>
-                </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/arequipa.jpg" alt="Second slide">
+
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Arequipa</h1>
+                <p>Viaja a Arequipa desde $150 o S/.600</p>
+                <p><a class="btn btn-lg btnC" href="#">Ver vuelos</a></p>
+              </div>
             </div>
-            
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/puno.jpg" alt="Second slide">
+
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Puno</h1>
+                <p>Viaja a Puno desde $150 o S/.600</p>
+                <p><a class="btn btn-lg btnC" href="#">Ver vuelos</a></p>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <!--Aqui acaba el carrusel de consejos-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--Aqui acaba el codigo del carrusel-->
+      <!--AQUI INICIA LA SECCION DE OFERTAS DE VUELOS-->
+      <div>
+        <div class="mt-4">
+          <p class="fs-2 fw-bold ml-5" >OFERTAS DE VUELOS</p>
+        </div>
+        <div class="ml-5">
+          <select class="select fw-bold fs-5">
+            <option value="1">Cuzco</option>
+            <option value="2">Lima</option>
+            <option value="3">Puno</option>
+            <option value="4">Arequipa</option>
+          </select>
+        </div>
+        <div class="container">
+          <div class="row text-center mb-5">
+            <div class="col d-flex justify-content-center">
+              <div class="card" style="width: 18rem; border-radius: 30px;">
+                <img class="card-img-top" src="img/puno.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title">Cuzco</h5>
+                      <p class="detalleVuelo">
+                        Ida y vuelta
+                      </p>
+                      <p class="detalleVuelo">
+                        Turista
+                      </p>
+                    </div>
+                    <div class="col">
+                      <p class="text-start mb-1">
+                        Desde:
+                      </p>
+                      <p class="text-start  mb-0 precio fw-bold">
+                        $ 280-S/.1120 
+                      </p>
+                      <p class="text-start  mb-0 descuento fw-bold" style="color:red">
+                        (-25%)
+                      </p>
+                      <p class="text-start  mb-0">
+                        Viaja el: 06/12/2021
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+              <div class="card" style="width: 18rem; border-radius: 30px;">
+                <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title">Cuzco</h5>
+                      <p class="detalleVuelo">
+                        Ida y vuelta
+                      </p>
+                      <p class="detalleVuelo">
+                        Turista
+                      </p>
+                    </div>
+                    <div class="col">
+                      <p class="text-start mb-1">
+                        Desde:
+                      </p>
+                      <p class="text-start  mb-0 precio fw-bold">
+                        $ 280-S/.1120 
+                      </p>
+                      <p class="text-start  mb-0 descuento fw-bold" style="color:red">
+                        (-25%)
+                      </p>
+                      <p class="text-start  mb-0">
+                        Viaja el: 06/12/2021
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+              <div class="card" style="width: 18rem; border-radius: 30px;">
+                <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title">Cuzco</h5>
+                      <p class="detalleVuelo">
+                        Ida y vuelta
+                      </p>
+                      <p class="detalleVuelo">
+                        Turista
+                      </p>
+                    </div>
+                    <div class="col">
+                      <p class="text-start mb-1">
+                        Desde:
+                      </p>
+                      <p class="text-start  mb-0 precio fw-bold">
+                        $ 280-S/.1120 
+                      </p>
+                      <p class="text-start  mb-0 descuento fw-bold" style="color:red">
+                        (-25%)
+                      </p>
+                      <p class="text-start  mb-0">
+                        Viaja el: 06/12/2021
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row text-center mb-5">
+            <div class="col d-flex justify-content-center">
+              <div class="card" style="width: 18rem; border-radius: 30px;">
+                <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title">Cuzco</h5>
+                      <p class="detalleVuelo">
+                        Ida y vuelta
+                      </p>
+                      <p class="detalleVuelo">
+                        Turista
+                      </p>
+                    </div>
+                    <div class="col">
+                      <p class="text-start mb-1">
+                        Desde:
+                      </p>
+                      <p class="text-start  mb-0 precio fw-bold">
+                        $ 280-S/.1120 
+                      </p>
+                      <p class="text-start  mb-0 descuento fw-bold" style="color:red">
+                        (-25%)
+                      </p>
+                      <p class="text-start  mb-0">
+                        Viaja el: 06/12/2021
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+              <div class="card" style="width: 18rem; border-radius: 30px;">
+                <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title">Cuzco</h5>
+                      <p class="detalleVuelo">
+                        Ida y vuelta
+                      </p>
+                      <p class="detalleVuelo">
+                        Turista
+                      </p>
+                    </div>
+                    <div class="col">
+                      <p class="text-start mb-1">
+                        Desde:
+                      </p>
+                      <p class="text-start  mb-0 precio fw-bold">
+                        $ 280-S/.1120 
+                      </p>
+                      <p class="text-start  mb-0 descuento fw-bold" style="color:red">
+                        (-25%)
+                      </p>
+                      <p class="text-start  mb-0">
+                        Viaja el: 06/12/2021
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+              <div class="card" style="width: 18rem; border-radius: 30px;">
+                <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title">Cuzco</h5>
+                      <p class="detalleVuelo">
+                        Ida y vuelta
+                      </p>
+                      <p class="detalleVuelo">
+                        Turista
+                      </p>
+                    </div>
+                    <div class="col">
+                      <p class="text-start mb-1">
+                        Desde:
+                      </p>
+                      <p class="text-start  mb-0 precio fw-bold">
+                        $ 280-S/.1120 
+                      </p>
+                      <p class="text-start  mb-0 descuento fw-bold" style="color:red">
+                        (-25%)
+                      </p>
+                      <p class="text-start  mb-0">
+                        Viaja el: 06/12/2021
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--AQUI FINALIZA LA SECION DE OFERTAS DE VUELOS-->
+      <!--Seccion de consejos-->
+      <div style="background-color: #FFC300;" class=" d-flex justify-content-center">
+        <div class="card mb-3 mt-4 ml-5 mr-5 h-auto" >
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/nosotros.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Sobre Nosotros</h5>
+                <p class="card-text">
+                  Descripción general
+                  Junto con nuestro socio regional American Eagle, ofrecemos una media de cerca de 6700 vuelos diarios a 350 destinos de 50 países. Somos miembros fundadores de la alianza oneworld®, cuyos miembros y miembros electos ofrecen cerca de 14 250 vuelos diarios a 1000 destinos de 150 países.
+
+                  En 2016 American Airlines Group Inc. encabezaba la lista de las mejores respuestas comerciales publicada por la revista Fortune, y su cotización de valores (NASDAQ: AAL) entró a formar parte del índice S&P 500.
+
+                  Comuníquese con American a través de Twitter (@AmericanAir) y Facebook (Facebook.com/AmericanAirlines).
+
+                  Historia
+                  Fundada en 1930, somos ahora mismo una de las mayores líneas aéreas del mundo. A lo largo de los años, American ha creado más de 900 000 puestos de trabajo en todo el mundo y apoyado a cerca de 1400 organizaciones sin ánimo de lucro.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!final de seccion de consejos>
+      <!--Aqui inicia el codigo del carrusel de cobnsejos-->
+        <div id="carouselConsejos" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators" >
+            <li data-target="#carouselConsejos" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselConsejos" data-slide-to="1"></li>
+            <li data-target="#carouselConsejos" data-slide-to="2"></li>
+            </ol>
+            <div class="font-monospace mt-4">
+              <p class="fs-3 texto fw-bold text-center">Consejos para tu vuelo</p>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row h-100 align-items-center text-center">
+                        <div class="col d-flex justify-content-center">
+                            <a href="#" class="consejos">
+                              <div class="card" style="width: 18rem;  border-radius: 30px;">
+                                <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
+                                <div class="card-body">
+                                <h5 class="card-title">Consejo 1</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                              </div>
+                            </a>
+                        </div>
+                        <div class="col d-flex justify-content-center" >
+                            <a href="#" class="consejos">
+                              <div class="card" style="width: 18rem;  border-radius: 30px;">
+                                <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
+                                <div class="card-body">
+                                <h5 class="card-title">Consejo 2</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col d-flex justify-content-center" >
+                            <a href="#" class="consejos">
+                              <div class="card" style="width: 18rem;  border-radius: 30px;">
+                                <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
+                                <div class="card-body">
+                                <h5 class="card-title">Consejo 3</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row h-100 align-items-center text-center">
+                        <div class="col d-flex justify-content-center">
+                          <a href="#" class="consejos">
+                            <div class="card" style="width: 18rem;  border-radius: 30px;">
+                              <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
+                              <div class="card-body">
+                              <h5 class="card-title">Consejo 4</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              </div>
+                          </div>
+                          </a>
+                        </div>
+                        <div class="col d-flex justify-content-center" >
+                          <a href="#" class="consejos">
+                            <div class="card" style="width: 18rem;  border-radius: 30px;">
+                              <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
+                              <div class="card-body">
+                              <h5 class="card-title">Consejo 5</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              </div>
+                          </div>
+                          </a>
+                        </div>
+                        <div class="col d-flex justify-content-center" >
+                          <a href="#" class="consejos">
+                            <div class="card" style="width: 18rem;  border-radius: 30px;">
+                              <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
+                              <div class="card-body">
+                              <h5 class="card-title">Consejo 6</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              </div>
+                          </div>
+                          </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row h-100 align-items-center text-center">
+                        <div class="col d-flex justify-content-center">
+                          <a href="#" class="consejos">
+                            <div class="card" style="width: 18rem;  border-radius: 30px;">
+                              <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
+                              <div class="card-body">
+                              <h5 class="card-title">Consejo 7</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              </div>
+                          </div>
+                          </a>
+                        </div>
+                        <div class="col d-flex justify-content-center" >
+                          <a href="#" class="consejos">
+                            <div class="card" style="width: 18rem;  border-radius: 30px;">
+                              <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
+                              <div class="card-body">
+                              <h5 class="card-title">Consejo 8</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              </div>
+                          </div>
+                          </a>
+                        </div>
+                        <div class="col d-flex justify-content-center" >
+                          <a href="#" class="consejos">
+                            <div class="card" style="width: 18rem;  border-radius: 30px;">
+                              <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
+                              <div class="card-body">
+                              <h5 class="card-title">Consejo 9</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              </div>
+                          </div>
+                          </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!--Aqui acaba el carrusel de consejos-->
 
 
 
 
-  <!-- FOOTER -->
-    <footer class="container">
-        <p class="float-end"><a href="#">Back to top</a></p>
-        <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    </footer>
-</main>
+      <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+    </main>
 
     <style>
         .carousel-indicators li {
             height: 8px;
             width: 8px;
-            border-radius: 15px;
+            border-radius: 10px;
             background-color: black;
         }
         .carousel-indicators .active {
@@ -305,5 +508,11 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+      crossorigin="anonymous"></script>
   </body>
 </html>
