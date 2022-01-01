@@ -3,40 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="css/filtro.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
-
-    <!-- Bootstrap core CSS -->
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
-    
-    <!-- Custom styles for this template -->
-    <link href="css/carousel.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
   <body>
     <!--INICIO DEL HEADER-->
@@ -59,80 +31,179 @@
     <!--FIN DEL HEADER-->
     <main>
     <!--Aqui inicia el codigo del carrusel-->
-      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="img/lima.jpg" alt="First slide">
-
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Lima</h1>
-                <p>Viaja a Lima desde $150 o S/.600</p>
-                <p><a class="btn btn-lg btnC" href="#">Ver vuelos</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="img/cuzco.jpg" alt="Second slide">
-
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Cuzco</h1>
-                <p>Viaja a Cuzco desde $150 o S/.600</p>
-                <p><a class="btn btn-lg btnC" href="#">Ver vuelos</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="img/arequipa.jpg" alt="Second slide">
-
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Arequipa</h1>
-                <p>Viaja a Arequipa desde $150 o S/.600</p>
-                <p><a class="btn btn-lg btnC" href="#">Ver vuelos</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="img/puno.jpg" alt="Second slide">
-
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Puno</h1>
-                <p>Viaja a Puno desde $150 o S/.600</p>
-                <p><a class="btn btn-lg btnC" href="#">Ver vuelos</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <!--Aqui acaba el codigo del carrusel-->
+      <div class="carousel-inner carousel-principal">
+        <div class="carousel-item active">
+          <div class="carousel-caption  d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+            <button type="button" class="btn btn-primary">Ver vuelo</button>
+          </div>
+          <img src="img/arequipa.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/lima.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption  d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+            <button type="button" class="btn btn-primary">Ver vuelo</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/puno.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption  d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+            <button type="button" class="btn btn-primary">Ver vuelo</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--Aqui acaba el codigo del carrusel-->
+    <section>
+      <div class="container">
+          <form action="#" method="post" novalidate="novalidate">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div class="row" style="width: 200px;">
+                      <button
+                          class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected MuiTab-fullWidth"
+                          tabindex="0" type="button" role="tab" aria-selected="true" id="id-tab-flight"
+                          data-testid="id-tab-flight-tab" aria-controls="tabpanel-flight" data-value="flight" style="background-color: #fff; border: 0px; text-align: left">
+                          <span class="MuiTab-wrapper">
+                              <div class="TabsLabelstyled__LabelWrapper-sc-15i2ivy-0 kSMwnE">
+                                  <i aria-hidden="true" color="#303030" class="sc-EHOje fSjMtz">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px"
+                                          viewBox="0 0 40 40" fill="none" focusable="false">
+                                          <path fill="currentColor" fill-rule="evenodd"
+                                              d="M14.8993 17.6342C15.1121 17.5527 15.3412 17.6098 15.5703 17.7892C15.7339 17.9441 15.7748 18.1562 15.693 18.4253L13.4757 24.6236L15.9302 24.0282C16.143 23.9467 16.2739 23.8733 16.323 23.7917L21.3139 15.4975C21.4203 15.3343 21.5267 15.2446 21.633 15.2202L28.7676 12.6512C29.504 12.3902 30.0522 12.015 30.4122 11.5257C30.7722 11.0363 30.8377 10.5062 30.6331 9.92715C30.5758 9.7722 30.494 9.60095 30.3713 9.41337C30.2486 9.22579 30.0604 9.07082 29.7985 8.94033C29.5367 8.80984 29.1604 8.75275 28.6858 8.7609C28.2113 8.77721 27.5813 8.91587 26.7876 9.17685L21.5185 11.069C21.363 11.1179 21.1994 11.1179 21.0439 11.0526C20.8884 10.9874 20.7821 10.8732 20.7248 10.7182C20.6676 10.5388 20.6839 10.3676 20.7657 10.2208C20.8476 10.074 20.9621 9.97609 21.1258 9.92715L26.3949 8.03507C29.2749 7.03192 31.0667 7.53757 31.7867 9.5357C32.024 10.1963 32.0649 10.7917 31.9013 11.3299C31.7458 11.8682 31.4268 12.3494 30.9522 12.7735C30.4777 13.1976 29.8804 13.5401 29.1686 13.8011L22.2712 16.2886L17.3539 24.4687C17.1985 24.7541 16.8221 25.0069 16.2411 25.219L13.0339 25.9693C12.6575 26.0508 12.3875 25.9693 12.1993 25.7328C12.0111 25.4963 11.9784 25.219 12.0766 24.9009L14.0975 19.2164L9.30291 20.8802C7.98563 21.3287 6.75019 21.3695 5.59654 20.9943C4.4429 20.6273 3.55924 19.8852 2.92105 18.7842L0.188275 13.9642C-0.17991 13.2791 -0.00808601 12.8061 0.703738 12.5451L2.80649 11.7948C3.23195 11.6398 3.62469 11.7051 3.99287 11.9905L7.75652 14.7961L12.4693 13.0589L6.48015 7.21134C6.30015 6.97483 6.21835 6.72199 6.24289 6.46101C6.32471 6.20003 6.49654 6.01246 6.75836 5.90643H6.79926L9.81019 5.07457C10.1784 4.94408 10.5466 4.98485 10.9148 5.1969L17.1412 8.59781C17.2966 8.67936 17.3948 8.80169 17.4357 8.97296C17.4766 9.14423 17.4521 9.29918 17.3784 9.42967C17.2966 9.58463 17.1821 9.69064 17.0266 9.74773C16.8712 9.80482 16.7075 9.78852 16.5521 9.70696L10.3256 6.27345C10.3011 6.24898 10.252 6.24898 10.1702 6.27345L7.91198 6.90142L14.0484 12.8632C14.1057 12.9447 14.1466 13.0344 14.1875 13.1405C14.2284 13.2465 14.2366 13.3525 14.212 13.4586C14.1548 13.6706 14.0321 13.8174 13.8193 13.8908L7.87108 16.0602C7.63381 16.1173 7.44563 16.0847 7.31472 15.9786L3.1992 12.9366L1.37466 13.6053L3.95198 18.148C4.42652 19.0207 5.09742 19.5916 5.97288 19.8689C6.84834 20.1462 7.83835 20.0891 8.94291 19.6894L14.8993 17.6342Z">
+                                          </path>
+                                      </svg>
+                                  </i>
+                                  <span aria-label="Buscar vuelos" style="font-size: xx-large; font-weight: 500;">VUELOS</span>
+                              </div>
+                          </span>
+                      </button>
+                      </div>
+                      <div>&nbsp</div>
+
+                      <div class="row">
+                          <div class="col-lg-3 col-md-3 col-sm-12 p-0" style="margin-right: 5px;">
+                              <select class="form-control search-slt" id="exampleFormControlSelect1">
+                                  <option>Ida y Vuelta</option>
+                                  <option>Solo Ida</option>
+                              </select>
+                          </div>
+                          <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                              <select class="form-control search-slt" id="exampleFormControlSelect1">
+                                  <option>Basico</option>
+                                  <option>Economico</option>
+                                  <option>Premium</option>
+                              </select>
+                          </div>
+                                                    
+                          <div class="col-lg-3 col-md-3 col-sm-12 p-0" style="width: 150px;">
+                              <label for="tentacles" style= "text-align: center; padding-top: 6px;padding-bottom: 6px;padding-right: 6px;padding-left: 6px;
+                              width: 84px;height: 48px;border-top-width: 1px;border-left-width: 1px;border-bottom-width: 6px;">Adulto</label>
+                              <input type="number" id="tentacles" name="tentacles" min="0" max="9" style="
+                              padding-top: 6px;
+                              padding-bottom: 6px;
+                              padding-right: 6px;
+                              padding-left: 6px;
+                              width: 50px;
+                              margin-top: 5px;
+                              border-radius: 10px;
+                          ">
+                          </div>
+                          <div class="col-lg-3 col-md-3 col-sm-12 p-0" style="width: 150px;">
+                              <label for="tentacles" style= "text-align: center; padding-top: 6px;padding-bottom: 6px;padding-right: 6px;padding-left: 6px;
+                              width: 84px;height: 48px;border-top-width: 1px;border-left-width: 1px;border-bottom-width: 6px;">Niño</label>
+                              <input type="number" id="tentacles" name="tentacles" min="0" max="9" style="
+                              padding-top: 6px;
+                              padding-bottom: 6px;
+                              padding-right: 6px;
+                              padding-left: 6px;
+                              width: 50px;
+                              margin-top: 5px;
+                              border-radius: 10px;
+                          ">
+                          </div>
+                          <div class="col-lg-3 col-md-3 col-sm-12 p-0" style="width: 150px;">
+                              <label for="tentacles" style= "text-align: center; padding-top: 6px;padding-bottom: 6px;padding-right: 6px;padding-left: 6px;
+                              width: 84px;height: 48px;border-top-width: 1px;border-left-width: 1px;border-bottom-width: 6px;">Bebé</label>
+                              <input type="number" id="tentacles" name="tentacles" min="0" max="9" style="
+                              padding-top: 6px;
+                              padding-bottom: 6px;
+                              padding-right: 6px;
+                              padding-left: 6px;
+                              width: 50px;
+                              margin-top: 5px;
+                              border-radius: 10px;
+                          ">
+                          </div>
+                          
+                      </div>
+                      
+                      <div>&nbsp</div>
+
+                      <div class="row">
+                          <div class="col-lg-3 col-md-3 col-sm-12 p-0" style="margin-right: 5px;">
+                              <input type="text" class="form-control search-slt" placeholder="Origen">
+                          </div>
+                          <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                              <input type="text" class="form-control search-slt" placeholder="Destino">
+                          </div>
+
+                          <div class="col-lg-3 col-md-3 col-sm-12 p-0" style="width: 60px;">
+                              <label for="tentacles" style= "text-align: center; padding-top: 6px;padding-bottom: 6px;padding-right: 6px;padding-left: 6px;
+                              width: 60px;height: 48px;border-top-width: 1px;border-left-width: 1px; border-bottom-width: 6px;">Ida</label>
+                          </div>
+                          <div class="col-lg-3 col-md-3 col-sm-12 p-0" style="width: 200px;">
+                              <input style="height: 50px; border-radius: 20px;" name="fecha" type="date" class="form-control" placeholder="dd/mm/aaaa" pattern="[0-31]{1}/[0-12]{1}/[2021-3000]{1}" required />                                                             
+                          </div>
+                          <div class="col-lg-3 col-md-3 col-sm-12 p-0" style="width: 75px;">
+                              <label for="tentacles" style= "text-align: center; padding-top: 6px;padding-bottom: 6px;padding-right: 6px;padding-left: 6px;
+                              width: 75px;height: 48px;border-top-width: 1px;border-left-width: 1px; border-bottom-width: 6px;">Vuelta</label>
+                          </div>
+                          <div class="col-lg-3 col-md-3 col-sm-12 p-0" style="width: 200px;">
+                              <input style="height: 50px;  border-radius: 20px;" name="fecha" type="date" class="form-control" placeholder="dd/mm/aaaa" pattern="[0-31]{1}/[0-12]{1}/[2021-3000]{1}" required />                                                             
+                          </div>
+                      </div>
+                      <div>&nbsp</div>
+                      
+                      <div class="btn-holder" style="width: 200px; background: #516ED3;">
+                          <button type="button" class="btn btn-Buscar wrn-btn" style="color: #fff;">Buscar</button>
+                      </div> 
+
+                  </div>
+              </div>
+          </form>
+      </div>
+    </section>
       <!--AQUI INICIA LA SECCION DE OFERTAS DE VUELOS-->
       <div>
         <div class="mt-4">
-          <p class="fs-2 fw-bold ml-5" >OFERTAS DE VUELOS</p>
+          <p class="fs-2 fw-bold ps-5" >OFERTAS DE VUELOS</p>
         </div>
         <div class="ml-5">
-          <select class="select fw-bold fs-5">
-            <option value="1">Cuzco</option>
-            <option value="2">Lima</option>
-            <option value="3">Puno</option>
-            <option value="4">Arequipa</option>
+          <select class="select fw-bold fs-5 ps-5">
+            <option value="1" class="select fw-bold fs-5 ps-5">Cuzco</option>
+            <option value="2" class="select fw-bold fs-5 ps-5">Lima</option>
+            <option value="3" class="select fw-bold fs-5 ps-5">Puno</option>
+            <option value="4" class="select fw-bold fs-5 ps-5">Arequipa</option>
           </select>
         </div>
         <div class="container">
@@ -337,7 +408,7 @@
       <!--AQUI FINALIZA LA SECION DE OFERTAS DE VUELOS-->
       <!--Seccion de consejos-->
       <div style="background-color: #FFC300;" class=" d-flex justify-content-center">
-        <div class="card mb-3 mt-4 ml-5 mr-5 h-auto" >
+        <div class="card m-5 h-auto" >
           <div class="row g-0">
             <div class="col-md-4">
               <img src="img/nosotros.jpg" class="img-fluid rounded-start" alt="...">
@@ -361,17 +432,18 @@
           </div>
         </div>
       </div>
-      <!final de seccion de consejos>
+      <!--final de seccion de consejos>
       <!--Aqui inicia el codigo del carrusel de cobnsejos-->
+
+
+
+
+
+
+        <div class="font-monospace mt-4">
+          <p class="fs-3 texto fw-bold text-start">Consejos para tu vuelo</p>
+        </div>
         <div id="carouselConsejos" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators" >
-            <li data-target="#carouselConsejos" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselConsejos" data-slide-to="1"></li>
-            <li data-target="#carouselConsejos" data-slide-to="2"></li>
-            </ol>
-            <div class="font-monospace mt-4">
-              <p class="fs-3 texto fw-bold text-center">Consejos para tu vuelo</p>
-            </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="row h-100 align-items-center text-center">
@@ -486,6 +558,14 @@
                 </div>
                 
             </div>
+            <button class="carousel-control-prev pb-5" type="button" data-bs-target="#carouselConsejos" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next pb-5" type="button" data-bs-target="#carouselConsejos" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
         </div>
         <!--Aqui acaba el carrusel de consejos-->
 
@@ -518,27 +598,7 @@
         </div>
       </footer>
     </main>
-
-    <style>
-        .carousel-indicators li {
-            height: 8px;
-            width: 8px;
-            border-radius: 10px;
-            background-color: black;
-        }
-        .carousel-indicators .active {
-            background-color: #FFC300;
-        }
-    </style>
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
-      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
   </body>
 </html>
