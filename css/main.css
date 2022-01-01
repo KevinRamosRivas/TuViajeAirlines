@@ -6,7 +6,7 @@
 }
 
 
-.header{
+.header,.footer{
     background-color: var(--color-primario);
 }
 
