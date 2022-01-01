@@ -16,6 +16,12 @@
     font-family: var(--fuente-texto);
     text-align: center;
 }
+
+.fuente{
+  font-family: var(--fuente-texto);
+  text-align: justify;
+}
+
 .carousel-principal img {
     width: 100%;
     max-height: 500px;
