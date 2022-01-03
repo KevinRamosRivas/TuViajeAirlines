@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/stylelogin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
+
   <div class="container">
+
     <input type="checkbox" id="flip">
     <div class="cover">
       <div class="front">
-        <img src="img/LOGO-TUVIAJEf.png" alt="">
+       <a href="index.html"><img src="img/LOGO-TUVIAJEf.png" alt=""></a> 
       </div>
       <div class="back">
         <img src="img/LOGO-TUVIAJEf.png" alt="">
@@ -43,34 +46,39 @@
       </div>
         <div class="signup-form">
           <div class="title">Registrar nuevo usuario</div>
-        <form action="#">
-            <div class="input-boxes">
+        <form action="#" id="form">
+            <div class="input-boxes" clas = "form">
               <div class="input-box">
                 <i class="fas fa-user"></i>
-                <input type="text" placeholder="Ingrese sus nombres" required>
+                <input type="text" id= "nombres" placeholder="Ingrese sus nombres" >
               </div>
               <div class="input-box">
                 <i class="fas fa-user"></i>
-                <input type="text" placeholder="Ingrese sus Apellidos" required>
+                <input type="text" id= "apellidos" placeholder="Ingrese sus Apellidos" >
               </div>
               <div class="input-box">
                 <i class="fas fa-envelope"></i>
-                <input type="text" placeholder="Ingrese su correo" required>
+                <input type="text" id = "correo" placeholder="Ingrese su correo" >
               </div>
               <div class="input-box">
                 <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Ingrese su contraseña" required>
+                <input type="password" id = "contraseña" placeholder="Ingrese su contraseña" >
               </div>
               <div class="input-box">
                 <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Confirme su contraseña" required>
+                <input type="password" id = "confirmar" placeholder="Confirme su contraseña" >
               </div>
               <div class="button input-box">
-                <input type="submit" value="Registrarse">
+                <input type="submit" value="Registrarse"> 
               </div>
+              <p class="warning" id="warnings" ></p>
               <div class="text sign-up-text">Si ya se encuentra registrado <label for="flip">inicie sesión</label></div>
+              
+
             </div>
+
       </form>
+      <script src="js/validaciones.js"></script>
     </div>
     </div>
     </div>

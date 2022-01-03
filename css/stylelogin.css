@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Poppins" , sans-serif;
 }
+
 body{
   min-height: 100vh;
   display: flex;
@@ -38,14 +39,20 @@ body{
 .container #flip:checked ~ .cover{
   transform: rotateY(-180deg);
 }
- 
- .container .cover .back{
+
+ .container .cover .front,.container .cover .back{
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
 }
+
+.warning{
+  color:black;
+  text-align: center;
+}
+
 .cover .back{
   transform: rotateY(180deg);
   backface-visibility: hidden;
