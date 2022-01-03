@@ -5,7 +5,7 @@ section{
     padding-bottom: 20px;
 }
 
-.container{
+section .container{
     background-color: #fff;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -13,10 +13,10 @@ section{
     border-radius: 20px;
 }
 
-.search-sec{
+section .search-sec{
     padding: 2rem;
 }
-.search-slt{
+section .search-slt{
     display: block;
     width: 100%;
     font-size: 0.875rem;
@@ -28,7 +28,7 @@ section{
     height: calc(3rem + 2px) !important;
     border-radius:20px;
 }
-.wrn-btn{
+section .wrn-btn{
     width: 100%;
     font-size: 16px;
     font-weight: 400;
@@ -38,7 +38,7 @@ section{
     
 }
 
-.btn-holder {
+section .btn-holder {
     justify-content: flex-end;
     display: flex;
     float: right;
@@ -47,7 +47,7 @@ section{
 }
 
 @media (min-width: 992px){
-    .search-sec{
+    section .search-sec{
         position: relative;
         top: -114px;
         background: rgba(26, 70, 104, 0.51);
