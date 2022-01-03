@@ -25,19 +25,19 @@
           <div class="login-form">
             <div class="title">Iniciar Sesión</div>
 
-          <form action="index.html">
+          <form action="index.html" id="formIniciar">
             <div class="input-boxes">
               <div class="input-box">
                 <i class="fas fa-envelope"></i>
-                <input type="text" placeholder="Ingrese su correo electrónico" required>
+                <input type="text" id= "user" placeholder="Ingrese su correo electrónico" required>
               </div>
               <div class="input-box">
                 <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Ingrese su contraseña" required>
+                <input type="password" id="password" placeholder="Ingrese su contraseña" required>
               </div>
 
               <div class="button input-box">
-              <input type="submit" value="INGRESAR">
+              <input type="submit" value="INGRESAR" id="btnIngresar">
               </div>
 
               <div class="text sign-up-text">Si no tienes una cuenta <label for="flip">Regístrate aquí</label></div>
@@ -79,6 +79,7 @@
 
       </form>
       <script src="js/validaciones.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11?v=<?php echo time(); ?>"></script>
     </div>
     </div>
     </div>
