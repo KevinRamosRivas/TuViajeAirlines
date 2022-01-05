@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/stylelogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+
+  <div class="container">
+
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+       <a href="index.html"><img src="img/LOGO-TUVIAJEf.png" alt=""></a> 
+      </div>
+      <div class="back">
+        <img src="img/LOGO-TUVIAJEf.png" alt="">
+      </div>
+    </div>
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">Iniciar Sesión</div>
+
+          <form action="index.html" id="formIniciar">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" id= "user" placeholder="Ingrese su correo electrónico" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" placeholder="Ingrese su contraseña" required>
+              </div>
+
+              <div class="button input-box">
+              <input type="submit" value="INGRESAR" id="btnIngresar">
+              </div>
+
+              <div class="text sign-up-text">Si no tienes una cuenta <label for="flip">Regístrate aquí</label></div>
+            </div>
+        </form>
+      </div>
+        <div class="signup-form">
+          <div class="title">Registrar nuevo usuario</div>
+        <form action="#" id="form">
+            <div class="input-boxes" clas = "form">
+              <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" id= "nombres" placeholder="Ingrese sus nombres" >
+              </div>
+              <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" id= "apellidos" placeholder="Ingrese sus Apellidos" >
+              </div>
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" id = "correo" placeholder="Ingrese su correo" >
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" id = "contraseña" placeholder="Ingrese su contraseña" >
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" id = "confirmar" placeholder="Confirme su contraseña" >
+              </div>
+              <div class="button input-box">
+                <input type="submit" value="Registrarse"> 
+              </div>
+              <p class="warning" id="warnings" ></p>
+              <div class="text sign-up-text">Si ya se encuentra registrado <label for="flip">inicie sesión</label></div>
+              
+
+            </div>
+
+      </form>
+      <script src="js/validaciones.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11?v=<?php echo time(); ?>"></script>
+    </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>

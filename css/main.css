@@ -16,3 +16,34 @@
     font-family: var(--fuente-texto);
     text-align: center;
 }
+
+.fuente{
+  font-family: var(--fuente-texto);
+  text-align: justify;
+}
+
+.carousel-principal img {
+    width: 100%;
+    max-height: 550px;
+}
+
+.consejos{
+    text-decoration:none;
+    color: black;
+  }
+  
+  .consejos:hover{
+    box-shadow: 2px 2px 5px #999;
+    color: black;
+    text-decoration:none;
+    border-radius: 30px;
+  }
+
+  .detalleVuelo{
+    background-color: #E5E5E5;
+    color: black;
+    border-radius: 30px;
+  }
+  .select{
+    border-color: white;
+  }
