@@ -47,3 +47,7 @@
   .select{
     border-color: white;
   }
+
+  .btn:focus{
+    background-color: green !important;
+  }
