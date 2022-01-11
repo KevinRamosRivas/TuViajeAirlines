@@ -35,8 +35,8 @@
 
     <main>
         <div class="container-fluid py-3">
-            <form action="">
-                <button type="button" class="btn card my-3 mx-auto btn btn-outline-secondary" style="width: 75%;">
+            <form action="/informacion_resumen_compra.html" method="post">
+                <div id="eqc1" class="card my-3 mx-auto btn btn-outline-secondary" style="width: 75%;">
                     <div class="d-flex justify-content-around align-items-center" style="width: 100%;">
                         <p class="fuente mt-4 fs-5">Basico</p>
                         <ul class="mt-4 fs-5">
@@ -49,9 +49,11 @@
                         </ul>
                         <p class="fuente mt-4 fs-5">Gratis</p>
                     </div>
-                </button>
+                    <input id="eq1" name="basico" type="button"
+                        style=" color:transparent; border:none; background: transparent; outline: 0;" />
+                </div>
 
-                <button type="button" class="card my-3 mx-auto btn btn-outline-secondary" style="width: 75%;">
+                <div id="eqc2" class="card my-3 mx-auto btn btn-outline-secondary" style="width: 75%;">
                     <div class="d-flex justify-content-around align-items-center" style="width: 100%;">
                         <p class="fuente mt-4 fs-5">Ligero</p>
                         <ul class="mt-4 fs-5">
@@ -66,9 +68,11 @@
                         </ul>
                         <p class="fuente mt-4 fs-5">20$ o S/.80</p>
                     </div>
-                </button>
+                    <input id="eq2" name="ligero" type="button"
+                        style=" color:transparent; border:none; background: transparent; outline: 0;" />
+                </div>
 
-                <button type="button" class="card my-3 mx-auto btn btn-outline-secondary" style="width: 75%;">
+                <div id="eqc3" class="card my-3 mx-auto btn btn-outline-secondary" style="width: 75%;">
                     <div class="d-flex justify-content-around align-items-center" style="width: 100%;">
                         <p class="fuente mt-4 fs-5">Plus</p>
                         <ul class="mt-4 fs-5">
@@ -86,7 +90,10 @@
                         </ul>
                         <p class="fuente mt-4 fs-5">40$ o S/.160</p>
                     </div>
-                </button>
+                    <input id="eq3" name="plus" type="button"
+                        style=" color:transparent; border:none; background: transparent; outline: 0;" />
+
+                </div>
 
 
 
@@ -96,7 +103,7 @@
                 <div class=" mx-auto d-flex justify-content-end align-items-center flex-column flex-md-row mt-5"
                     style="width: 75%;">
 
-                    <button class="btn btn-colors fuente text-center fs-2"
+                    <button  id="boton_envio2" type="submit" class="btn btn-colors fuente text-center fs-2 disabled"
                         style="color:#fff; background: #516ED3; border-radius: 40px; height: 60px; width: 25%;">Continua
                         -></button>
                 </div>
@@ -129,7 +136,7 @@
         </div>
     </footer>
 
-
+    <script src="js/equipaje.js"></script>
 </body>
 
 </html>
