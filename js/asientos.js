@@ -1,5 +1,22 @@
+const btnEnviar = document.getElementById("btnEnviar");
+const numAsiento = document.getElementById("numAsiento");
+const form = document.querySelector(".form");
+var asiento = null ;
+document.addEventListener('DOMContentLoaded', () => {
+    btnEnviar.addEventListener('click',enviarDato);
+})
+
+
+const enviarDato = (e) =>{
+    e.preventDefault();
+    var a = asiento.value;
+    numAsiento.setAttribute('value',a);
+    console.log(numAsiento.getAttribute("value"));
+    form.submit();
+
+}
 function verificarDisponibilidad(id){
-    const asiento = document.getElementById(id);
+    asiento = document.getElementById(id);
     var a = asiento.getAttribute("style");
     var b = "background-color: rgb(245, 110, 110)"
     console.log(a);
@@ -19,7 +36,7 @@ function verificarDisponibilidad(id){
         Swal.fire({
             title: "Elegiste el asiento "+id,
             showDenyButton: true,
-            showCancelButton: true,
+            showCancelButton: false,
             confirmButtonText: 'Aceptar',
             denyButtonText: `Cancelar`,
           }).then((result) => {
