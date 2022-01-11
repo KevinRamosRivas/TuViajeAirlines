@@ -47,7 +47,12 @@
   .select{
     border-color: white;
   }
+  .ocupado:focus{
+    background-color: rgb(245, 110, 110);
+  }
 
   .btn:focus{
-    background-color: #516ed3 !important;
+    background-color: #516ed3;
   }
+
+  
