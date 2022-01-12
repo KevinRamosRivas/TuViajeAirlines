@@ -40,7 +40,8 @@ const validateForm = (e) => {
         return;
     }
     else{
-        window.location.href = "confirmación_de_pago.html";
+        console.log("si ");
+        window.location.href = "http://localhost/xampp/TuViajeAirlines/confirmacion.html";
     }
     
 }
