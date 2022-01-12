@@ -82,19 +82,19 @@
                         <h4 class="fuente ms-3 my-3">Servicios Adicionales</h4>
 
                         <div class="ms-3 form-check">
-                            <input class="form-check-input" name="adicional" type="checkbox" value="1" id="equipaje_box">
+                            <input class="form-check-input" name="adicional[]" type="checkbox" value="Equipaje" id="equipaje_box">
                             <label class="form-check-label fuente" for="equipaje_box">
                                 Equipaje
                             </label>
                         </div>
                         <div class="ms-3 form-check">
-                            <input class="form-check-input" name="adicional" type="checkbox" value="2" id="alimento_box">
+                            <input class="form-check-input" name="adicional[]" type="checkbox" value="Alimento a Bordo" id="alimento_box">
                             <label class="form-check-label fuente" for="alimento_box">
                                 Alimento a bordo
                             </label>
                         </div>
                         <div class="ms-3 form-check">
-                            <input class="form-check-input" name="adicional" type="checkbox" value="3" id="viaje_box">
+                            <input class="form-check-input" name="adicional[]" type="checkbox" value="Cancelacion de Viaje" id="viaje_box">
                             <label class="form-check-label fuente" for="viaje_box">
                                 Cancelacion de Viaje
                             </label>

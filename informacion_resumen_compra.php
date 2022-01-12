@@ -145,9 +145,21 @@
                             break;
                     };
                     ?>
-                    <p class="nav-text">Servicio Adicional:</p>
+                    <?php
+                    $precioAdicional = 0;
+                    if (!empty($_POST['adicional'])) { ?>
+                        <p class="nav-text">Servicio Adicional:</p>
+                        <?php foreach ($_POST['adicional'] as $servicio) {
+                            print "<p class=\"text-center\">" . $servicio . "</p>";
+                            print "<p class=\"text-center\">S/40</p>";
 
-
+                            $precioAdicional += 40;
+                        } ?>
+                    <?php }
+                    $Total = (int)$_POST['price'] + $precioEquip + $precioAdicional;
+                    ?>
+                    <p class="nav-text">TOTAL:</p>
+                    <p class="text-center">S/<?php echo $Total ?> </p>
                 </div>
             </div>
 
