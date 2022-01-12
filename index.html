@@ -24,7 +24,6 @@
                   <a class="nav-link nav-text me-3" href="#">DESTINOS</a>
                   <a class="nav-link nav-text" href="login.html">INICIAR SESION</a>
               </div>
-
           </div>
       </div>    
     </header>
@@ -199,17 +198,14 @@
         <div class="mt-4">
           <p class="fs-2 fw-bold ps-5" >OFERTAS DE VUELOS</p>
         </div>
-        <div class="ml-5">
-          <select class="select fw-bold fs-5 ps-5" id="depelegido">
+        <div class="ml-5 mb-3">
+          <select class="select fw-bold fs-5 ps-5" id="depelegido" onchange="filtrar()">
+            <option disabled selected>Destino</option>
             <option value="1" class="select fw-bold fs-5 ps-5">Cuzco</option>
             <option value="2" class="select fw-bold fs-5 ps-5">Lima</option>
             <option value="3" class="select fw-bold fs-5 ps-5">Puno</option>
             <option value="4" class="select fw-bold fs-5 ps-5">Arequipa</option>
           </select>
-
-          <p>
-            <input type="button" class="boton btn btn-primary w-20 b-filtrar" value="Filtrar" onclick="filtrar()">
-          </p>
 
         </div>
 
@@ -227,6 +223,48 @@
             document.getElementById("destinoelegido5").innerHTML = selected;
             document.getElementById("destinoelegido6").innerHTML = selected;
 
+            console.log(selected);
+
+            const img1 = document.getElementById("img1");
+            const img2 = document.getElementById("img2");
+            const img3 = document.getElementById("img3");
+            const img4 = document.getElementById("img4");
+            const img5 = document.getElementById("img5");
+            const img6 = document.getElementById("img6");
+
+            if(selected == "Lima"){
+              img1.setAttribute("src","img/lima.jpg");
+              img2.setAttribute("src","img/lima.jpg");
+              img3.setAttribute("src","img/lima.jpg");
+              img4.setAttribute("src","img/lima.jpg");
+              img5.setAttribute("src","img/lima.jpg");
+              img6.setAttribute("src","img/lima.jpg");
+            }
+            if(selected == "Cuzco"){
+              img1.setAttribute("src","img/cuzco.jpg");
+              img2.setAttribute("src","img/cuzco.jpg");
+              img3.setAttribute("src","img/cuzco.jpg");
+              img4.setAttribute("src","img/cuzco.jpg");
+              img5.setAttribute("src","img/cuzco.jpg");
+              img6.setAttribute("src","img/cuzco.jpg");
+            }
+            if(selected == "Puno"){
+              img1.setAttribute("src","img/puno.jpg");
+              img2.setAttribute("src","img/puno.jpg");
+              img3.setAttribute("src","img/puno.jpg");
+              img4.setAttribute("src","img/puno.jpg");
+              img5.setAttribute("src","img/puno.jpg");
+              img6.setAttribute("src","img/puno.jpg");
+            }
+            if(selected == "Arequipa"){
+              img1.setAttribute("src","img/arequipa.jpg");
+              img2.setAttribute("src","img/arequipa.jpg");
+              img3.setAttribute("src","img/arequipa.jpg");
+              img4.setAttribute("src","img/arequipa.jpg");
+              img5.setAttribute("src","img/arequipa.jpg");
+              img6.setAttribute("src","img/arequipa.jpg");
+            }
+
           } 
           </script>
         </div>
@@ -235,7 +273,7 @@
           <div class="row text-center mb-5">
             <div class="col d-flex justify-content-center">
               <div class="card" style="width: 18rem; border-radius: 30px;">
-                <img class="card-img-top" src="img/puno.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
+                <img id="img1" class="card-img-top" src="img/cuzco.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
@@ -267,7 +305,7 @@
             </div>
             <div class="col d-flex justify-content-center">
               <div class="card" style="width: 18rem; border-radius: 30px;">
-                <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
+                <img id="img2" class="card-img-top" src="img/cuzco.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
@@ -299,7 +337,7 @@
             </div>
             <div class="col d-flex justify-content-center">
               <div class="card" style="width: 18rem; border-radius: 30px;">
-                <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
+                <img id="img3" class="card-img-top" src="img/cuzco.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
@@ -333,7 +371,7 @@
           <div class="row text-center mb-5">
             <div class="col d-flex justify-content-center">
               <div class="card" style="width: 18rem; border-radius: 30px;">
-                <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
+                <img id="img4" class="card-img-top" src="img/cuzco.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
@@ -365,7 +403,7 @@
             </div>
             <div class="col d-flex justify-content-center">
               <div class="card" style="width: 18rem; border-radius: 30px;">
-                <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
+                <img id="img5" class="card-img-top" src="img/cuzco.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
@@ -397,7 +435,7 @@
             </div>
             <div class="col d-flex justify-content-center">
               <div class="card" style="width: 18rem; border-radius: 30px;">
-                <img class="card-img-top" src="img/arequipa.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
+                <img id="img6" class="card-img-top" src="img/cuzco.jpg" alt="Card image cap" style="border-radius:30px 30px 0px 0px;">
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
