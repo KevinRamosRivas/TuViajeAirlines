@@ -97,6 +97,11 @@
 
                 <div class=" mx-auto d-flex justify-content-end align-items-center flex-column flex-md-row mt-5" style="width: 75%;">
 
+                    <?php if(!empty($_POST['adicional'])){
+                        foreach($_POST['adicional'] as $servicio){ ?>
+                            <input value="<?php echo $servicio ?>" type="text" name="adicional[]" style="display: none;">
+                    <?php }
+                    }?>
                     <input class="input-destino" value="<?php echo $_POST['destiny'] ?>" type="text" name="destiny" style="display: none;">
                     <input class="input-tipo" value="<?php echo $_POST['type'] ?>" type="text" name="type" style="display: none;">
                     <input class="input-precio" value="<?php echo $_POST['price'] ?>" type="text" name="price" style="display: none;">
