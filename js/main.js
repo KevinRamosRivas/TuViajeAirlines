@@ -51,7 +51,7 @@ const validateForm = (e) =>{
         return;
     }
     console.log("ga");
-    window.location.href = "http://localhost/xampp/TuViajeAirlines/busqdetallada.php";
+    window.location.href = "busqdetallada.php";
 }
 
 

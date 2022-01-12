@@ -40,7 +40,7 @@ const validateForm = (e) => {
         return;
     }
     else{
-        window.location.href = "http://127.0.0.1:5500/index_copia_prueba.html?mensaje=1";
+        window.location.href = "confirmación_de_pago.html";
     }
     
 }
