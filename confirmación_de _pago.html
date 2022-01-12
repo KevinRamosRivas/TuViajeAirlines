@@ -125,7 +125,7 @@
 		</div>
 
 		<!-- Formulario -->
-		<form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+		<form  id="formulario-tarjeta" class="formulario-tarjeta form" action="pago.php" method="post">
             <h1 class="fw-bold fs-4" id="titleLoginPage">Datos de la Tarjeta</h1>
 			<div class="grupo">
 				<label for="inputNumero">Número Tarjeta</label>
@@ -173,7 +173,7 @@
 					<label for="selecDepartamento">Departamento</label>
 					<div class="flexbox">
 						<div class="grupo-select">
-							<select class="form-control search-slt" id="exampleFormControlSelect1">
+							<select class="form-control search-slt" id="selectDepartamento">
                                 <option disabled selected>Departamento</option>
                                 <option>Amazonas</option>
                                 <option>Ancash</option>
@@ -210,7 +210,7 @@
 					<input type="text" id="inputCP" maxlength="9">
 				</div>
 			</div>
-			<button type="submit" class="btn-enviar">PAGAR</button>
+			<button type="submit" class="btn-enviar" id="btnEnviar">PAGAR</button>
 		</form>
 
 	</div>
@@ -248,6 +248,7 @@
     
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 	<script src="js/confirmacion_pago.js"></script>
-    
+    <script src="js/validarPago.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11?v=<?php echo time(); ?>"></script>
     </body>
 </html>
