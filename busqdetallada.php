@@ -137,9 +137,12 @@
                         document.getElementById("meselegido5").innerHTML = "Fecha de salida: " + m1.value;
                         document.getElementById("meselegido6").innerHTML = "Fecha de salida: " + m1.value;
 
+
+                        
                         var inputDestino = document.getElementsByClassName('input-destino');
                         for (var i = 0; i < inputDestino.length; i++) {
                             inputDestino[i].setAttribute('value', memory);
+
                         }
 
                         var inputPrecio = document.getElementsByClassName('input-precio');
@@ -165,6 +168,25 @@
                             inputTipo[i].setAttribute('value', typeMem);
                         }
 
+                        var img = document.getElementsByClassName("img");
+                                for(var i = 0; i < img.length; i++) {
+                                    switch(memory){
+                                        case 'Lima':
+                                            img[i].setAttribute('src','img/lima.jpg');
+                                            break;
+                                        case 'Cuzco':
+                                            img[i].setAttribute('src','img/cuzco.jpg');
+                                            break;
+                                        case 'Arequipa':
+                                            img[i].setAttribute('src','img/arequipa.jpg');
+                                            break;
+                                        default:
+                                            img[i].setAttribute('src','img/puno.jpg');
+                                            break;
+                                    }     
+                                }
+
+
                     }
                 </script>
 
@@ -181,7 +203,7 @@
 
                         <div class="imagen-opc">
 
-                            <img src="img/arequipa.jpg" alt="imagen-opc">
+                            <img class="img" src="img/arequipa.jpg" alt="imagen-opc">
 
                         </div>
 
@@ -211,7 +233,7 @@
 
                         <div class="imagen-opc">
 
-                            <img src="img/arequipa.jpg" alt="imagen-opc">
+                            <img class="img" src="img/arequipa.jpg" alt="imagen-opc">
 
                         </div>
 
@@ -241,7 +263,7 @@
 
                         <div class="imagen-opc">
 
-                            <img src="img/arequipa.jpg" alt="imagen-opc">
+                            <img class="img" src="img/arequipa.jpg" alt="imagen-opc">
 
                         </div>
 
@@ -271,7 +293,7 @@
 
                         <div class="imagen-opc">
 
-                            <img src="img/arequipa.jpg" alt="imagen-opc">
+                            <img class="img" src="img/arequipa.jpg" alt="imagen-opc">
 
                         </div>
 
@@ -301,7 +323,7 @@
 
                         <div class="imagen-opc">
 
-                            <img src="img/arequipa.jpg" alt="imagen-opc">
+                            <img class="img" src="img/arequipa.jpg" alt="imagen-opc">
 
                         </div>
 
@@ -331,7 +353,7 @@
 
                         <div class="imagen-opc">
 
-                            <img src="img/arequipa.jpg" alt="imagen-opc">
+                            <img class="img" src="img/arequipa.jpg" alt="imagen-opc">
 
                         </div>
 
