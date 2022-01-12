@@ -13,12 +13,28 @@ const it3 = document.getElementById('hor3');
 //Boton envio
 const btn1 = document.getElementById('boton_envio');
 
+//Input escogido
+var hor = document.getElementById("iti_escogido");
+
+//Formulario
+const form = document.getElementById('form_horario');
+
+/*
+btn1.addEventListener('click', function (e) {
+    e.preventDefault();
+    form.submit();
+    window.location.href = "equipaje.php";
+})
+*/
+
 input1.addEventListener("click", function () {
     it1.classList.add('active');
     it2.classList.remove('active');
     it3.classList.remove('active');
 
     btn1.classList.remove('disabled');
+
+    hor.setAttribute('value', input1.value);
 
 })
 
@@ -28,6 +44,8 @@ input2.addEventListener("click", function () {
     it1.classList.remove('active');
 
     btn1.classList.remove('disabled');
+
+    hor.setAttribute('value', input2.value);
 })
 
 input3.addEventListener("click", function () {
@@ -36,4 +54,7 @@ input3.addEventListener("click", function () {
     it1.classList.remove('active');
 
     btn1.classList.remove('disabled');
+
+
+    hor.setAttribute('value', input3.value);
 })

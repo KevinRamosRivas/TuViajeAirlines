@@ -92,10 +92,11 @@
                 <p class="fw-bold fs-3">Resumen de compra</p>
             </div>
             <div class="border border-dark h-auto mb-4 p-4" style="border-radius: 30px;">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia nesciunt vel maiores repellat dicta praesentium libero quae quam rem deserunt, enim iusto perferendis? Maxime exercitationem iusto quisquam quae velit magnam.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corrupti assumenda quidem consequuntur soluta, explicabo commodi ex, hic voluptas cum perspiciatis totam, earum distinctio inventore optio enim maxime sit doloribus!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus mollitia illo, temporibus possimus velit perferendis ipsum at ea illum vel aperiam molestias suscipit quo odit deserunt tempore explicabo autem nemo?
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, cum distinctio possimus at quo, quibusdam sapiente animi fugiat modi libero deserunt iusto, ullam voluptas vero nemo magni ad similique praesentium!
+                <?php
+                    echo ('<pre>');
+                    var_dump($_POST);
+                    echo ('</pre>');         
+                ?>
             </div>
           </div>
 

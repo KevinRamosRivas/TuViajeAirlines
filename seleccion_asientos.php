@@ -9,8 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -40,7 +39,7 @@
                 <h5 class="fw-bold fs-4" id="titleLoginPage">Selección de Asientos</h5>
                 <p class="text-secondary" id="textLoginPage">Los asientos ocupados estan en rojo*</p>
             </div>
-            <form method="get" >
+            <form method="post">
                 <div class="row text-center mb-4 border py-4 mx-4" style="border-radius: 30px;  background-color: #C4C4C4;">
                     <div class="container">
                         <div class="row justify-content-md-center mb-4">
@@ -108,7 +107,7 @@
                             <div class="col-1 d-flex justify-content-center">
                                 <input id="12" class="btn border btn-light" type="button" value="12" onclick="verificarDisponibilidad(id)" style="border-radius: 10px;">
                             </div>
-                        </div> 
+                        </div>
                         <div class="row justify-content-md-center mb-4">
                             <div class="col-1 d-flex justify-content-center">
                                 <input id="13" class="btn border btn-light" type="button" value="13" onclick="verificarDisponibilidad(id)" style="border-radius: 10px;">
@@ -130,7 +129,7 @@
                             <div class="col-1 d-flex justify-content-center">
                                 <input id="18" class="btn border btn-light" type="button" value="18" onclick="verificarDisponibilidad(id)" style="border-radius: 10px;">
                             </div>
-                        </div> 
+                        </div>
                         <div class="row justify-content-md-center mb-4">
                             <div class="col-1 d-flex justify-content-center">
                                 <input id="19" class="btn border btn-light ocupado" type="button" value="19" onclick="verificarDisponibilidad(id)" style="border-radius: 10px; background-color: rgb(245, 110, 110)">
@@ -152,7 +151,7 @@
                             <div class="col-1 d-flex justify-content-center">
                                 <input id="24" class="btn border btn-light ocupao" type="button" value="24" onclick="verificarDisponibilidad(id)" style="border-radius: 10px; background-color: rgb(245, 110, 110)">
                             </div>
-                        </div> 
+                        </div>
                         <div class="row justify-content-md-center mb-4">
                             <div class="col-1 d-flex justify-content-center">
                                 <input id="25" id="1" class="btn border btn-light" type="button" value="25" onclick="verificarDisponibilidad(id)" style="border-radius: 10px;">
@@ -174,7 +173,7 @@
                             <div class="col-1 d-flex justify-content-center">
                                 <input id="30" class="btn border btn-light" type="button" value="30" onclick="verificarDisponibilidad(id)" style="border-radius: 10px;">
                             </div>
-                        </div> 
+                        </div>
                         <div class="row justify-content-md-center mb-4">
                             <div class="col-1 d-flex justify-content-center">
                                 <input id="31" class="btn border btn-light" type="button" value="31" onclick="verificarDisponibilidad(id)" style="border-radius: 10px;">
@@ -196,7 +195,7 @@
                             <div class="col-1 d-flex justify-content-center">
                                 <input id="36" class="btn border btn-light" type="button" value="36" onclick="verificarDisponibilidad(id)" style="border-radius: 10px;">
                             </div>
-                        </div> 
+                        </div>
                         <div class="row justify-content-md-center mb-4">
                             <div class="col-1 d-flex justify-content-center">
                                 <input id="37" class="btn border btn-light" type="button" value="37" onclick="verificarDisponibilidad(id)" style="border-radius: 10px;">
@@ -218,13 +217,15 @@
                             <div class="col-1 d-flex justify-content-center">
                                 <input id="42" class="btn border btn-light" type="button" value="42" onclick="verificarDisponibilidad(id)" style="border-radius: 10px;">
                             </div>
-                        </div>                     
+                        </div>
                     </div>
                 </div>
             </form>
             <!--para recuperar el numero de asiento solo hace falta que se use php con post o get el name del input es asiento-->
             <div>
-                <form method="GET" action="" class="form">
+                <form method="post" action="informacion_resumen_compra.php" class="form">
+                    <input id="iti_escogido" value="<?php echo $_POST['itinerario'] ?>" type="text" name="itinerario" style="display: none;">
+                    <input id="eq_escogido" value="<?php echo $_POST['equipaje'] ?>" type="text" name="equipaje" style="display: none;">
                     <input id="numAsiento" value="" type="text" name="asiento" style="display: none;">
                     <button type="submit" id="btnEnviar" style="border: 2px solid #CED6E0; font-size: 22px;
                     height: 50px; width: 30%;padding :5px 12px; transition: .3s ease all; border-radius: 5px;
