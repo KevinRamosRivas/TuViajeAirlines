@@ -50,7 +50,6 @@ const validateForm = (e) =>{
         showError('Debe incluirse al menos un adulto para realizar la busqueda');
         return;
     }
-    console.log("ga");
     window.location.href = "http://localhost/xampp/TuViajeAirlines/busqdetallada.php";
 }
 
@@ -79,6 +78,6 @@ function actualizar(opcion){
 
 function cerrarSesion(opcion){
     if(opcion.value ==1){
-        window.location.href = "http://127.0.0.1:5500/index.html";
+        window.location.href = "http://localhost/xampp/TuViajeAirlines/index.html";
     }
 }

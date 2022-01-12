@@ -17,21 +17,28 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container-fluid px-5">
-            <div class="navbar flex-column flex-md-row">
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/LogoTuViaje.png" alt="LogoTuViaje" width="80" height="80">
-                </a>
+    <header class="header p-t-0" style="background-color: rgb(255, 196, 0);">
+      <div class="container-fluid px-5">
+          <div class="navbar flex-column flex-md-row">
+              <a class="navbar-brand" href="index.html">
+                  <img src="img/LogoTuViaje.png" alt="LogoTuViaje" width="80" height="80">
+              </a>
 
-                <div class="navbar-nav  flex-md-row">
-                    <a class="nav-link nav-text me-3" href="#">OFERTAS</a>
-                    <a class="nav-link nav-text me-3" href="#">DESTINOS</a>
-                    <a class="nav-link nav-text" href="#">INICIAR SESION</a>
-                </div>
-
-            </div>
-        </div>
+              <div class="navbar-nav  flex-md-row">
+                  <a class="nav-link nav-text me-3" href="#">OFERTAS</a>
+                  <a class="nav-link nav-text me-3" href="#">DESTINOS</a>
+                  <a class="navbar-brand">
+                    <div>
+                      <img src="img/foto_perfil.PNG" alt="foto_perfil" width="50" height="50"  style="border-radius: 50%;" alt=" ">
+                    </div>
+                  </a>
+                  <select class="form-control search-slt" id="exampleFormControlSelect1" style="text-align: center; font-size: 18px; font-weight: 600;" onchange="cerrarSesion(this)">
+                    <option disabled selected style="text-align: center;">Kevin Ramos</option>
+                    <option value="1"><a class="nav-link nav-text" href="index.html">Cerrar Sesión</a></option>
+                </select> 
+              </div>
+          </div>
+      </div>    
     </header>
 
     <section class="eleccion-vuelo">

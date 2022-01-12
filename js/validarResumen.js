@@ -40,7 +40,8 @@ const validateForm = (e) => {
         return;
     }
     else{
-        window.location.href = "http://127.0.0.1:5500/index_copia_prueba.html?mensaje=1";
+        console.log("si ");
+        window.location.href = "http://localhost/xampp/TuViajeAirlines/confirmacion.html";
     }
     
 }

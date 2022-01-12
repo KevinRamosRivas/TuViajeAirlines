@@ -95,6 +95,5 @@ const validateForm = (e) => {
         })
         return;
     }
-    form.submit();
-    form.reset();
+    window.location.href = "http://localhost/xampp/TuViajeAirlines/index_sesion_iniciada.html";
 }
