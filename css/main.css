@@ -55,4 +55,7 @@
     background-color: #516ed3;
   }
 
-  
+  .navbar-brand img{
+
+    float: center;
+  }
