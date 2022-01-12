@@ -77,7 +77,7 @@
                     </div>
                     <div class="mb-3" id="nIden">
                         <label for="numIdentidad" class="form-label">Numero de documento de identidad</label>
-                        <input type="password" class="form-control" id="numIdentidad">
+                        <input type="text" class="form-control" id="numIdentidad">
                     </div>
                     <div class="mb-3">
                         <label for="emailCliente" class="form-label">Correo electronico</label>
