@@ -4,7 +4,6 @@
     padding: 0;
 }
 
-
 .contenedor{
     display: flex;
     flex-direction: row;
@@ -16,16 +15,16 @@
 
 .filtro{
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     margin: 0 auto;
     border: 1px solid black;
     border-radius: 20px;
-    padding: 40px;
+    padding: 40px 100px;
 }
 
 .resultados{
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -33,7 +32,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 140px;
+    height: 160px;
     margin: 0 auto;
     border: 1px solid black;
     border-radius: 20px;
@@ -42,7 +41,7 @@
 
 .imagen-opc{
     height: 100%;
-    max-width: 200px;
+    max-width: 300px;
 
 }
 
@@ -52,45 +51,28 @@
     border-radius: 20px 0 0 20px;
 }
 
-.boton{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 10px;
-    color: white;
-    background-color: #516ED3;
-    justify-content: center;
-
-}
-
 .contenido{
     height: 100%;
     width: 100%;
-    max-width: 220px;
+    max-width: 280px;
+    padding-top: 12px;
 }
 
 .contenido p{
     font-size: 17px;
     margin: auto;
     padding-top: 6px;
-    padding-left: 20px;
+    padding-left: 50px;
 }
 
 .boton-continuar{
     height: 100%;
     width: 100%;
-    max-width: 178px;
+    max-width: 200px;
     margin: auto;
 }
 
 .boton-continuar > .boton{
-    margin-top: 55px;
-    margin-left: 10px;
+    margin-top: 60px;
+    margin-left: 15px;
 }
-
-
-
-
-
-
