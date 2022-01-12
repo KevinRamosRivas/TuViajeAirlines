@@ -224,6 +224,11 @@
             <!--para recuperar el numero de asiento solo hace falta que se use php con post o get el name del input es asiento-->
             <div>
                 <form method="post" action="informacion_resumen_compra.php" class="form">
+
+                    <input class="input-destino" value="<?php echo $_POST['destiny'] ?>" type="text" name="destiny" style="display: none;">
+                    <input class="input-tipo" value="<?php echo $_POST['type'] ?>" type="text" name="type" style="display: none;">
+                    <input class="input-precio" value="<?php echo $_POST['price'] ?>" type="text" name="price" style="display: none;">
+                    <input class="input-fecha" value="<?php echo $_POST['date'] ?>" type="text" name="date" style="display: none;">
                     <input id="iti_escogido" value="<?php echo $_POST['itinerario'] ?>" type="text" name="itinerario" style="display: none;">
                     <input id="eq_escogido" value="<?php echo $_POST['equipaje'] ?>" type="text" name="equipaje" style="display: none;">
                     <input id="numAsiento" value="" type="text" name="asiento" style="display: none;">

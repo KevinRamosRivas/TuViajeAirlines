@@ -45,7 +45,7 @@
                     <div class="d-flex justify-content-around" style="width: 100%;">
                         <p class="fuente">7:50 A.M</p>
                         <p class="fuente">3h 30m</p>
-                        <p class="fuente">$125</p>
+                        <p class="fuente">S/<?php echo $_POST['price'] ?></p>
                     </div>
                 </div>
 
@@ -57,9 +57,9 @@
                     </div>
                     <input id="iti2" name="horario" value="h2" type="button" style="color:transparent; border:none; background: transparent; outline: 0;" />
                     <div class="d-flex justify-content-around" style="width: 100%;">
-                        <p class="fuente">7:50 A.M</p>
+                        <p class="fuente">12:30 P.M</p>
                         <p class="fuente">3h 30m</p>
-                        <p class="fuente">$125</p>
+                        <p class="fuente">S/<?php echo $_POST['price'] ?></p>
                     </div>
                 </div>
 
@@ -71,9 +71,9 @@
                     </div>
                     <input id="iti3" name="horario" value="h3" type="button" style="color:transparent; border:none; background: transparent; outline: 0;" />
                     <div class="d-flex justify-content-around" style="width: 100%;">
-                        <p class="fuente">7:50 A.M</p>
+                        <p class="fuente">6:00 P.M</p>
                         <p class="fuente">3h 30m</p>
-                        <p class="fuente">$125</p>
+                        <p class="fuente">S/<?php echo $_POST['price'] ?></p>
                     </div>
                 </div>
 
@@ -82,25 +82,29 @@
                         <h4 class="fuente ms-3 my-3">Servicios Adicionales</h4>
 
                         <div class="ms-3 form-check">
-                            <input class="form-check-input" name="equipaje" type="checkbox" value="1" id="equipaje_box">
+                            <input class="form-check-input" name="adicional" type="checkbox" value="1" id="equipaje_box">
                             <label class="form-check-label fuente" for="equipaje_box">
                                 Equipaje
                             </label>
                         </div>
                         <div class="ms-3 form-check">
-                            <input class="form-check-input" name="equipaje" type="checkbox" value="2" id="alimento_box">
+                            <input class="form-check-input" name="adicional" type="checkbox" value="2" id="alimento_box">
                             <label class="form-check-label fuente" for="alimento_box">
                                 Alimento a bordo
                             </label>
                         </div>
                         <div class="ms-3 form-check">
-                            <input class="form-check-input" name="equipaje" type="checkbox" value="3" id="viaje_box">
+                            <input class="form-check-input" name="adicional" type="checkbox" value="3" id="viaje_box">
                             <label class="form-check-label fuente" for="viaje_box">
                                 Cancelacion de Viaje
                             </label>
                         </div>
                     </div>
 
+                    <input class="input-destino" value="<?php echo $_POST['destiny'] ?>" type="text" name="destiny" style="display: none;">
+                    <input class="input-tipo" value="<?php echo $_POST['type'] ?>" type="text" name="type" style="display: none;">
+                    <input class="input-precio" value="<?php echo $_POST['price'] ?>" type="text" name="price" style="display: none;">
+                    <input class="input-fecha" value="<?php echo $_POST['date'] ?>" type="text" name="date" style="display: none;">
                     <input id="iti_escogido" value="" type="text" name="itinerario" style="display: none;">
                     <button type="submit" id="boton_envio" class="btn btn-colors fuente text-center fs-2 disabled" style="color:#fff; background: #516ED3; border-radius: 40px; height: 60px; width: 25%;">Continua -></button>
                 </div>

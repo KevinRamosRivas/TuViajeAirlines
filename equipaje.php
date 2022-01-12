@@ -96,7 +96,12 @@
 
 
                 <div class=" mx-auto d-flex justify-content-end align-items-center flex-column flex-md-row mt-5" style="width: 75%;">
-                    <input id="iti_escogido" value="<?php echo $_POST['itinerario']?>" type="text" name="itinerario" style="display: none;">
+
+                    <input class="input-destino" value="<?php echo $_POST['destiny'] ?>" type="text" name="destiny" style="display: none;">
+                    <input class="input-tipo" value="<?php echo $_POST['type'] ?>" type="text" name="type" style="display: none;">
+                    <input class="input-precio" value="<?php echo $_POST['price'] ?>" type="text" name="price" style="display: none;">
+                    <input class="input-fecha" value="<?php echo $_POST['date'] ?>" type="text" name="date" style="display: none;">
+                    <input id="iti_escogido" value="<?php echo $_POST['itinerario'] ?>" type="text" name="itinerario" style="display: none;">
                     <input id="eq_escogido" value="" type="text" name="equipaje" style="display: none;">
                     <button id="boton_envio2" type="submit" class="btn btn-colors fuente text-center fs-2 disabled" style="color:#fff; background: #516ED3; border-radius: 40px; height: 60px; width: 25%;">Continua
                         -></button>
