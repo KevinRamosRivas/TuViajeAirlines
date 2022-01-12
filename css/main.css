@@ -55,4 +55,12 @@
     background-color: #516ed3;
   }
 
-  
+  .navbar-brand img{
+
+    float: center;
+  }
+
+  .b-filtrar{
+    margin-left: 50px;
+    margin-top: 10px;
+  }

@@ -43,26 +43,26 @@
             <form id="filtrodetallado" class="form">
 
                   <p>
-                    <strong><label for="destino">Destinos:</label></strong><br/>
-                    <input type="radio" name="destino" id="destino"> Arequipa <br>
-                    <input type="radio" name="destino" id="destino"> Ayacucho <br>
-                    <input type="radio" name="destino" id="destino"> Cajamarca <br>
-                    <input type="radio" name="destino" id="destino"> Chiclayo <br>
-                    <input type="radio" name="destino" id="destino"> Cuzco <br>
-                    <input type="radio" name="destino" id="destino"> Ilo <br>
-                    <input type="radio" name="destino" id="destino"> Iquitos <br> 
-                    <input type="radio" name="destino" id="destino"> Juliaca <br>
-                    <input type="radio" name="destino" id="destino"> Lima <br>
-                    <input type="radio" name="destino" id="destino"> Piura <br>
-                    <input type="radio" name="destino" id="destino"> Pucallpa <br>
-                    <input type="radio" name="destino" id="destino"> Puerto Maldonado <br>
-                    <input type="radio" name="destino" id="destino"> Rioja <br>
-                    <input type="radio" name="destino" id="destino"> Tacna <br>
-                    <input type="radio" name="destino" id="destino"> Talara <br>
-                    <input type="radio" name="destino" id="destino"> Tarapoto <br>
-                    <input type="radio" name="destino" id="destino"> Trujillo <br>
-                    <input type="radio" name="destino" id="destino"> Tumbes <br>
-                    <input type="radio" name="destino" id="destino"> Yurimaguas <br>
+                    <strong><label for="destino">Destinos:</label></strong><br>
+                    <input type="radio" name="destino" id="destino1" value="Arequipa"> Arequipa <br>
+                    <input type="radio" name="destino" id="destino2" value="Ayacucho"> Ayacucho <br>
+                    <input type="radio" name="destino" id="destino3" value="Cajamarca"> Cajamarca <br>
+                    <input type="radio" name="destino" id="destino4" value="Chiclayo"> Chiclayo <br>
+                    <input type="radio" name="destino" id="destino5" value="Cuzco"> Cuzco <br>
+                    <input type="radio" name="destino" id="destino6"value="Ilo"> Ilo <br>
+                    <input type="radio" name="destino" id="destino7" value="Iquitos"> Iquitos <br> 
+                    <input type="radio" name="destino" id="destino8" value="Juliaca"> Juliaca <br>
+                    <input type="radio" name="destino" id="destino9" value="Lima"> Lima <br>
+                    <input type="radio" name="destino" id="destino10" value="Piura"> Piura <br>
+                    <input type="radio" name="destino" id="destino11" value="Pucallpa"> Pucallpa <br>
+                    <input type="radio" name="destino" id="destino12" value="Puerto Maldonado"> Puerto Maldonado <br>
+                    <input type="radio" name="destino" id="destino13" value="Rioja"> Rioja <br>
+                    <input type="radio" name="destino" id="destino14" value="Tacna"> Tacna <br>
+                    <input type="radio" name="destino" id="destino15" value="Talara"> Talara <br>
+                    <input type="radio" name="destino" id="destino16" value="Tarapoto"> Tarapoto <br>
+                    <input type="radio" name="destino" id="destino17" value="Trujillo"> Trujillo <br>
+                    <input type="radio" name="destino" id="destino18" value="Tumbes"> Tumbes <br>
+                    <input type="radio" name="destino" id="destino19" value="Yurimaguas"> Yurimaguas <br>
                   </p>
 
                   <p>
@@ -91,18 +91,54 @@
                   <p>
                     <strong><label for="tipo">Tipo de vuelo:</label></strong><br/>
                     <input type="radio" name="tipo"> Solo ida <br>
-                    <input type="radio" name="tipo"> Ida y vuelta
+                    <input type="radio" name="tipo"> Ida y vuelta <br><br>
                   </p>
 
                   <p>
-                    <input type="button" class="boton" value="Filtrar" onclick="obtenerdatos()">
+                    <input type="button" class="boton btn btn-primary w-75" value="Filtrar" onclick="obtenerdatos()">
                   </p>
 
 
                   
             </form>
 
+            <script> 
 
+                function obtenerdatos() 
+                { 
+                    var dest=document.getElementsByName('destino');
+                    for(i=0; i<dest.length; i++){
+                        if(dest[i].checked){
+                            var memory=dest[i].value;
+                        }
+                    }  
+                    
+                    document.getElementById("destinoelegido1").innerHTML = memory;
+                    document.getElementById("destinoelegido2").innerHTML = memory;
+                    document.getElementById("destinoelegido3").innerHTML = memory;
+                    document.getElementById("destinoelegido4").innerHTML = memory;
+                    document.getElementById("destinoelegido5").innerHTML = memory;
+                    document.getElementById("destinoelegido6").innerHTML = memory;
+
+                    var p1=document.getElementById('desde');
+                    var p2=document.getElementById('hasta');
+                    document.getElementById("precioelegido1").innerHTML ="S/"+ p1.value + " - " + "S/" + p2.value;
+                    document.getElementById("precioelegido2").innerHTML ="S/"+ p1.value + " - " + "S/" + p2.value;
+                    document.getElementById("precioelegido3").innerHTML ="S/"+ p1.value + " - " + "S/" + p2.value;
+                    document.getElementById("precioelegido4").innerHTML ="S/"+ p1.value + " - " + "S/" + p2.value;
+                    document.getElementById("precioelegido5").innerHTML ="S/"+ p1.value + " - " + "S/" + p2.value;
+                    document.getElementById("precioelegido6").innerHTML ="S/"+ p1.value + " - " + "S/" + p2.value;
+                    
+                    var m1=document.getElementById('mes');
+                    document.getElementById("meselegido1").innerHTML = "Fecha de salida: "+ m1.value;
+                    document.getElementById("meselegido2").innerHTML = "Fecha de salida: "+ m1.value;
+                    document.getElementById("meselegido3").innerHTML = "Fecha de salida: "+ m1.value;
+                    document.getElementById("meselegido4").innerHTML = "Fecha de salida: "+ m1.value;
+                    document.getElementById("meselegido5").innerHTML = "Fecha de salida: "+ m1.value;
+                    document.getElementById("meselegido6").innerHTML = "Fecha de salida: "+ m1.value;
+
+                } 
+                </script>
 
         </div>
        
@@ -119,33 +155,9 @@
                 </div>
 
                 <div class="contenido">
-                    <strong><p id="destinoelegido">Arequipa</p></strong>
-                    <p id="precioelegido">150 - 210</p>
-                    <p id="mes elegido">Fecha de salida: Octubre</p>
-                    <p>Asientos disponibles: 24</p>
-
-                </div>
-
-                <div class="boton-continuar">
-                    <input type="submit" class="boton" value="Comprar">
-                </div>
-
-            </div> 
-
-            <br>
-
-            <div class="opcion">
-
-                <div class="imagen-opc">
-                    
-                    <img src="img/arequipa.jpg" alt="imagen-opc">
-                
-                </div>
-
-                <div class="contenido">
-                    <strong><p id="destinoelegido">Arequipa</p></strong>
-                    <p id="precioelegido">150 - 210</p>
-                    <p id="mes elegido">Fecha de salida: Octubre</p>
+                    <strong><p id="destinoelegido1">Destino</p></strong>
+                    <p id="precioelegido1">Precio del viaje</p>
+                    <p id="meselegido1">Fecha de partida</p>
                     <p>Asientos disponibles: 24</p>
 
                 </div>
@@ -167,15 +179,15 @@
                 </div>
 
                 <div class="contenido">
-                    <strong><p id="destinoelegido">Arequipa</p></strong>
-                    <p id="precioelegido">150 - 210</p>
-                    <p id="mes elegido">Fecha de salida: Octubre</p>
+                    <strong><p id="destinoelegido2">Destino</p></strong>
+                    <p id="precioelegido2">Precio del viaje</p>
+                    <p id="meselegido2">Fecha de partida</p>
                     <p>Asientos disponibles: 24</p>
 
                 </div>
 
                 <div class="boton-continuar">
-                    <input type="submit" class="boton" value="Comprar">
+                    <input type="submit" class="boton btn btn-primary w-75" value="Comprar">
                 </div>
 
             </div> 
@@ -191,15 +203,15 @@
                 </div>
 
                 <div class="contenido">
-                    <strong><p id="destinoelegido">Arequipa</p></strong>
-                    <p id="precioelegido">150 - 210</p>
-                    <p id="mes elegido">Fecha de salida: Octubre</p>
+                    <strong><p id="destinoelegido3">Destino</p></strong>
+                    <p id="precioelegido3">Precio del viaje</p>
+                    <p id="meselegido3">Fecha de partida</p>
                     <p>Asientos disponibles: 24</p>
 
                 </div>
 
                 <div class="boton-continuar">
-                    <input type="submit" class="boton" value="Comprar">
+                    <input type="submit" class="boton btn btn-primary w-75" value="Comprar">
                 </div>
 
             </div> 
@@ -215,15 +227,15 @@
                 </div>
 
                 <div class="contenido">
-                    <strong><p id="destinoelegido">Arequipa</p></strong>
-                    <p id="precioelegido">150 - 210</p>
-                    <p id="mes elegido">Fecha de salida: Octubre</p>
+                    <strong><p id="destinoelegido4">Destino</p></strong>
+                    <p id="precioelegido4">Precio del viaje</p>
+                    <p id="meselegido4">Fecha de partida</p>
                     <p>Asientos disponibles: 24</p>
 
                 </div>
 
                 <div class="boton-continuar">
-                    <input type="submit" class="boton" value="Comprar">
+                    <input type="submit" class="boton btn btn-primary w-75" value="Comprar">
                 </div>
 
             </div> 
@@ -239,22 +251,44 @@
                 </div>
 
                 <div class="contenido">
-                    <strong><p id="destinoelegido">Arequipa</p></strong>
-                    <p id="precioelegido">150 - 210</p>
-                    <p id="mes elegido">Fecha de salida: Octubre</p>
+                    <strong><p id="destinoelegido5">Destino</p></strong>
+                    <p id="precioelegido5">Precio del viaje</p>
+                    <p id="meselegido5">Fecha de partida</p>
                     <p>Asientos disponibles: 24</p>
 
                 </div>
 
                 <div class="boton-continuar">
-                    <input type="submit" class="boton" value="Comprar">
+                    <input type="submit" class="boton btn btn-primary w-75" value="Comprar">
                 </div>
 
             </div> 
 
             <br>
 
-            
+            <div class="opcion">
+
+                <div class="imagen-opc">
+                    
+                    <img src="img/arequipa.jpg" alt="imagen-opc">
+                
+                </div>
+
+                <div class="contenido">
+                    <strong><p id="destinoelegido6">Destino</p></strong>
+                    <p id="precioelegido6">Precio del viaje</p>
+                    <p id="meselegido6">Fecha de partida</p>
+                    <p>Asientos disponibles: 24</p>
+
+                </div>
+
+                <div class="boton-continuar">
+                    <input type="submit" class="boton btn btn-primary w-75" value="Comprar">
+                </div>
+
+            </div> 
+
+            <br>
 
 
 

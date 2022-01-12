@@ -9,10 +9,19 @@ const ida = document.getElementById("ida");
 const vuelta = document.getElementById("vuelta");
 const idaInput = document.getElementById("idaInput");
 const vueltaInput = document.getElementById("idaInput");
-
+const urlParams = new URLSearchParams(window.location.search);
 
 document.addEventListener('DOMContentLoaded', () => {
     btnBusqueda.addEventListener('click', validateForm);
+    if (urlParams.get('mensaje') == '1') {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'El pago fue realizado con exito. Gracias',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    }
 })
 
 
@@ -65,5 +74,11 @@ function actualizar(opcion){
     if(opcion.value == 2){
         vuelta.style.display = "none";
         vueltaInput.style.display = "none" 
+    }
+}
+
+function cerrarSesion(opcion){
+    if(opcion.value ==1){
+        window.location.href = "http://127.0.0.1:5500/index.html";
     }
 }
