@@ -25,7 +25,7 @@ const validateForm = (e) => {
     const genero = generoCliente.value;
     const telefono = telCliente.value;
 
-/*     if(nombres === '' || apellidos === '' ||
+  if(nombres === '' || apellidos === '' ||
     diaNacimiento === ''|| tipDocumento ==='' ||num_identidad ===''
     ||email === '' || genero ===  ''||
     telefono === ''){
@@ -42,19 +42,19 @@ const validateForm = (e) => {
     else{
         console.log("si ");
         
-    } */
+    }
 
 
-    window.location.href = "http://localhost/xampp/TuViajeAirlines/confirmacion.html";
+    //window.location.href = "http://localhost/xampp/TuViajeAirlines/confirmacion.html";
     
 }
 
 function cambiar(id){
     console.log(id);
     if(id==1){
-        nIden.innerHTML = '<label for="numIdentidad" class="form-label">Numero de pasaporte</label> <input type="password" class="form-control" id="numIdentidad">';
+        nIden.innerHTML = '<label for="numIdentidad" class="form-label">Numero de pasaporte</label> <input type="text" class="form-control" id="numIdentidad">';
     }
     if(id==2){
-        nIden.innerHTML = '<label for="numIdentidad" class="form-label">Numero de DNI</label> <input type="password" class="form-control" id="numIdentidad">';
+        nIden.innerHTML = '<label for="numIdentidad" class="form-label">Numero de DNI</label> <input type="text" class="form-control" id="numIdentidad">';
     }
 }
