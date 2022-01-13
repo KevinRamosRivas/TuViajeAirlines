@@ -25,27 +25,29 @@ const validateForm = (e) => {
     const genero = generoCliente.value;
     const telefono = telCliente.value;
 
-  if(nombres === '' || apellidos === '' ||
-    diaNacimiento === ''|| tipDocumento ==='' ||num_identidad ===''
-    ||email === '' || genero ===  ''||
-    telefono === ''){
-        console.log("ga");
-        swal.fire({
-            title: 'Error',
-            text: 'Debe completar todos los campos',
-            icon: 'error',
-            confirmButtonText: 'Aceptar',
-            confirmButtonColor: '#48BB78'
-        })
-        return;
-    }
-    else{
-        console.log("si ");
+//   if(nombres === '' || apellidos === '' ||
+//     diaNacimiento === '' ||num_identidad ===''
+//     ||email === '' || genero ===  ''||
+//     telefono === ''){
+//         console.log("ga");
+//         swal.fire({
+//             title: 'Error',
+//             text: 'Debe completar todos los campos',
+//             icon: 'error',
+//             confirmButtonText: 'Aceptar',
+//             confirmButtonColor: '#48BB78'
+//         })
+//         return;
+//     }
+//     else{
+//         console.log("si ");
         
-    }
+        
+//     }
+    window.location.href = "http://localhost/xampp/TuViajeAirlines/confirmacion.html";
 
 
-    //window.location.href = "http://localhost/xampp/TuViajeAirlines/confirmacion.html";
+    
     
 }
 
