@@ -9,11 +9,12 @@ const inputCiudad = document.getElementById("inputCiudad");
 const selectDepartamento = document.getElementById("selectDepartamento");
 const inputCP = document.getElementById("inputCP");
 const btnEnviar = document.getElementById("btnEnviar");
-
-
+const btnCorreo = document.getElementById("btnCorreo");
+const correoVerificacion = document.getElementById("correoVerificacion");
 
 document.addEventListener('DOMContentLoaded', () => {
     btnEnviar.addEventListener('click', validateForm);
+    btnCorreo.addEventListener('click',muestra);
 })
 
 
@@ -46,5 +47,29 @@ const validateForm = (e) => {
     else{
         window.location.href = "http://127.0.0.1:5500/index_copia_prueba.html?mensaje=1";
     }
+    
+}
+
+const muestra = (e) =>{
+    e.preventDefault();
+    if(correoVerificacion.value === ''){
+        swal.fire({
+            text: 'Debe completar este campo',
+            icon: 'error',
+            confirmButtonText: 'Aceptar',
+            confirmButtonColor: '#48BB78'
+        })
+        return;
+    }
+    else{
+        swal.fire({
+            text: 'El correo fue añadido exitosamente',
+            icon: 'success',
+            confirmButtonText: 'Aceptar',
+            confirmButtonColor: '#48BB78'
+        })
+        return;
+    }
+
     
 }
